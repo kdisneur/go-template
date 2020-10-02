@@ -3,6 +3,8 @@ package main
 import (
 	"fmt"
 	"os"
+
+	"github.com/kdisneur/<project>/internal"
 )
 
 func main() {
@@ -13,7 +15,7 @@ func main() {
 }
 
 func run() error {
-	fmt.Println("Hello World")
+	fmt.Println("version is", internal.GetVersionInfo())
 
 	return nil
 }
